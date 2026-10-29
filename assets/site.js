@@ -64,7 +64,7 @@
   }
 
   /* ---------- Contact form ---------- */
-  var FORM_ENDPOINT = "https://formsubmit.co/ajax/danbeaner@gmail.com"; /* swapped for Web3Forms endpoint when the key is ready */
+  var FORM_ENDPOINT = "https://api.web3forms.com/submit";
   var f = document.querySelector(".studio-form");
   if (f) {
     var s = f.querySelector(".form-status");
@@ -76,7 +76,7 @@
       var b = f.querySelector('button[type="submit"]');
       b.disabled = true; s.hidden = false; s.textContent = L.sending;
       var data = {};
-      new FormData(f).forEach(function (v, k) { data[k] = v; });
+      new FormData(f).forEach(function (v, k) { if (k.charAt(0) !== "_") data[k] = v; });
       fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) })
         .then(function (r) { if (!r.ok) throw 0; f.reset(); s.textContent = L.ok; })
         .catch(function () { b.disabled = false; s.textContent = L.err; });
