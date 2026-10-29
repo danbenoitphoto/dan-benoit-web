@@ -209,3 +209,6 @@ body.gateway-page{background:var(--navy)}
 @keyframes fadein{from{opacity:0}to{opacity:1}}
 
 .form-status{margin-top:14px;font-weight:600}
+.mock-old .old-stock{background:#d8d2bd;border:1px dashed #8a7a4f;color:#8a7a4f;text-align:center;padding:26px 10px;font-size:.8em;letter-spacing:.25em;margin-bottom:12px}
+.mock-old .old-btn{display:inline-block;border:1px solid #8a7a4f;padding:.35em 1.1em;font-size:.9em;background:#f7f1de}
+.mock-old .old-foot{border-top:1px solid #c9bc92;margin-top:14px;padding-top:8px;font-size:.78em;color:#7a6c42}
