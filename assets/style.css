@@ -90,7 +90,7 @@ section.navy{background:linear-gradient(160deg,#0a0f1e,#0d1526 60%,#0a0f1e)}
 /* mocks inside slider */
 .mock{position:absolute;inset:0;padding:0;overflow:hidden;text-align:left}
 .mock-old{background:#e9e4d2;color:#3a3220;font-family:Georgia,"Times New Roman",serif}
-.mock-old .old-bar{background:#8a7a4f;color:#fff;padding:10px 16px 10px 176px;font-size:.9rem;white-space:nowrap;overflow:hidden}
+.mock-old .old-bar{background:#8a7a4f;color:#fff;padding:10px 16px 10px 198px;font-size:.9rem;white-space:nowrap;overflow:hidden}
 .mock-old .old-in{padding:26px 30px}
 .mock-old .old-stock{background:#cfc6a8;border:2px dashed #8a7a4f;color:#8a7a4f;text-align:center;padding:34px 10px;letter-spacing:.3em;font-size:.8rem;margin-bottom:16px}
 .mock-old h4{font-size:1.65rem;margin:.1em 0 .3em;color:#5c1a1a;text-decoration:underline}
@@ -105,7 +105,7 @@ section.navy{background:linear-gradient(160deg,#0a0f1e,#0d1526 60%,#0a0f1e)}
 .mock-new .new-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:16px 22px}
 .mock-new .new-cards div{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 8px;text-align:center;font-size:.85rem;font-weight:700;color:#e8e2d2}
 .mock-new .new-strip{display:flex;gap:10px;padding:0 22px 16px}.mock-new .new-strip div{flex:1;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:9px 6px;text-align:center;font-size:.85rem;font-weight:700;color:#c8cfda}.mock-new .new-cta{flex:none;background:var(--gold-grad);color:#191204;text-align:center;font-weight:900;padding:13px 10px;font-size:1rem;letter-spacing:.02em}
-@media(max-width:640px){.mock-new .new-cards{grid-template-columns:repeat(2,1fr)}.mock-old .old-in{padding:16px}.mock-old .old-bar{padding-left:158px}.mock-new .new-bar{padding-right:168px}.mock-new .new-strip{flex-wrap:wrap}.mock-new .new-strip div{flex:1 1 40%}}
+@media(max-width:640px){.mock-new .new-cards{grid-template-columns:repeat(2,1fr)}.mock-old .old-in{padding:16px}.mock-old .old-bar{padding-left:184px}.mock-new .new-bar{padding-right:168px}.mock-new .new-strip{flex-wrap:wrap}.mock-new .new-strip div{flex:1 1 40%}}
 
 /* tiers */
 .tier{position:relative}
