@@ -160,3 +160,15 @@ details.faq p{color:var(--mut);margin:.6em 0 0}
   .marquee-track{animation:none}
   .hero-bg{transform:none}
 }
+
+/* Ready-to-launch samples shelf */
+.shelf{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.sample{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .2s ease,border-color .2s ease}
+.sample:hover{transform:translateY(-4px);border-color:#3d4763}
+.sample img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover}
+.sample .pad{padding:16px 18px 18px}
+.sample h3{margin:0 0 6px;font-size:1.02rem}
+.sample p{color:var(--mut);margin:0 0 10px;font-size:.94rem}
+.sample a{color:var(--gold2);font-weight:700;text-decoration:none}
+@media(max-width:1100px){.shelf{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.shelf{grid-template-columns:1fr}}
