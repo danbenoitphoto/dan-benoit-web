@@ -172,3 +172,8 @@ details.faq p{color:var(--mut);margin:.6em 0 0}
 .sample a{color:var(--gold2);font-weight:700;text-decoration:none}
 @media(max-width:1100px){.shelf{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.shelf{grid-template-columns:1fr}}
+
+/* "Would you call" callout */
+.callout{background:linear-gradient(160deg,#0a0f1e,#0d1526 60%,#0a0f1e);text-align:center;padding:96px 0}
+.callout h2{font-size:clamp(2.2rem,5.2vw,3.6rem);max-width:16em;margin-left:auto;margin-right:auto}
+.callout .lead{margin:0 auto;max-width:34em}
