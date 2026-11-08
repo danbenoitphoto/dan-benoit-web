@@ -20,6 +20,7 @@
 <meta name="twitter:image" content="https://web.danbenoit.com/assets/img/realtor-hero.jpg">
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/anim.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LMB8SJQ5DS"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LMB8SJQ5DS');</script>
 </head>
@@ -60,7 +61,14 @@
       </div>
     </div>
     <div class="hero-visual rv-hero">
-      <img src="../assets/img/hero-devices.webp" alt="Un portable affichant le site immobilier de Chantal Benoit et un téléphone affichant le site de burgers STACK'D — tous deux conçus et créés par Dan Benoit Web" width="1560" height="1240" fetchpriority="high">
+      <div class="hv-float">
+        <div class="hv-tilt">
+          <img src="../assets/img/hero-devices.webp" alt="Un portable affichant le site immobilier de Chantal Benoit et un téléphone affichant le site de burgers STACK'D — tous deux conçus et créés par Dan Benoit Web" width="1560" height="1240" fetchpriority="high">
+        </div>
+      </div>
+      <span class="hero-chip chip-1" aria-hidden="true">Bilingue · EN/FR</span>
+      <span class="hero-chip chip-2" aria-hidden="true">Pensé pour le mobile</span>
+      <span class="hero-chip chip-3" aria-hidden="true">Aucun modèle tout fait</span>
     </div>
   </div>
 </section>
@@ -75,7 +83,7 @@
 <section class="callout">
   <div class="wrap">
     <p class="kicker rv">Le test honnête</p>
-    <h2 class="rv">Est-ce que vous appelleriez votre propre entreprise <span class="gold-text">après avoir vu votre site?</span></h2>
+    <h2>Est-ce que vous appelleriez votre propre entreprise <span class="gold-text">après avoir vu votre site?</span></h2>
     <p class="lead rv">Si la réponse est non, c'est aussi celle que vos clients donnent.</p>
   </div>
 </section>
@@ -230,6 +238,7 @@
 
 <!-- ============ READY-TO-LAUNCH SAMPLES ============ -->
 <section id="samples">
+  <div class="outline-word" aria-hidden="true">WEB</div>
   <div class="wrap">
     <p class="kicker rv">Designs prêts à partir</p>
     <h2 class="rv">Des sites web <span class="gold-text">prêts à lancer.</span></h2>
@@ -254,10 +263,11 @@
     <p class="kicker rv">Comment ça marche</p>
     <h2 class="rv">En ligne en environ deux semaines.</h2>
     <div class="steps" style="margin-top:30px">
-      <div class="step rv"><span class="num">1</span><h3>Discussion — 15 minutes</h3><p>Ce que vous avez, ce que le site doit accomplir, quel niveau convient. Soumission par écrit. Sans pression, sans jargon.</p></div>
-      <div class="step rv"><span class="num">2</span><h3>Séance photo</h3><p>Je photographie votre entreprise, votre équipe, vos inscriptions ou votre propriété — drone et vidéo quand votre niveau en a besoin — habituellement en une seule visite.</p></div>
-      <div class="step rv"><span class="num">3</span><h3>Construction et révision</h3><p>Construit en français et en anglais. Vous examinez un lien d'aperçu privé et envoyez vos changements avant que quoi que ce soit aille en ligne.</p></div>
-      <div class="step rv"><span class="num">4</span><h3>Lancement et entretien</h3><p>Domaine, hébergement et Google configurés comme il faut — ensuite, les mises à jour et votre rapport mensuel sont faits pour vous.</p></div>
+      <svg class="process-line" viewBox="0 0 100 4" preserveAspectRatio="none" aria-hidden="true"><path d="M6 2 L94 2" pathLength="100" vector-effect="non-scaling-stroke"/></svg>
+      <div class="step"><span class="num">1</span><h3>Discussion — 15 minutes</h3><p>Ce que vous avez, ce que le site doit accomplir, quel niveau convient. Soumission par écrit. Sans pression, sans jargon.</p></div>
+      <div class="step"><span class="num">2</span><h3>Séance photo</h3><p>Je photographie votre entreprise, votre équipe, vos inscriptions ou votre propriété — drone et vidéo quand votre niveau en a besoin — habituellement en une seule visite.</p></div>
+      <div class="step"><span class="num">3</span><h3>Construction et révision</h3><p>Construit en français et en anglais. Vous examinez un lien d'aperçu privé et envoyez vos changements avant que quoi que ce soit aille en ligne.</p></div>
+      <div class="step"><span class="num">4</span><h3>Lancement et entretien</h3><p>Domaine, hébergement et Google configurés comme il faut — ensuite, les mises à jour et votre rapport mensuel sont faits pour vous.</p></div>
     </div>
   </div>
 </section>
@@ -321,6 +331,12 @@
 </section>
 </main>
 
+<div class="marquee mq2" aria-hidden="true">
+  <div class="marquee-track mq2-track" id="marquee2Track">
+    <span>CONCEPTION SUR MESURE <b>◆</b> AUCUN MODÈLE <b>◆</b> ANGLAIS + FRANÇAIS <b>◆</b> VRAIES PHOTOS <b>◆</b> VIDÉO PAR DRONE <b>◆</b> SUIVI MENSUEL <b>◆</b> EMBRUN · OTTAWA <b>◆</b>&nbsp;</span>
+  </div>
+</div>
+
 <footer class="site-footer">
   <div class="wrap">
     <span><strong>Dan Benoit Web</strong> · Embrun, Ontario</span>
@@ -338,6 +354,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="../assets/site.js"></script>
-<script>document.getElementById('marqueeTrack').innerHTML += document.getElementById('marqueeTrack').innerHTML;</script>
+<script src="../assets/anim.js"></script>
+<script>document.getElementById('marqueeTrack').innerHTML += document.getElementById('marqueeTrack').innerHTML;var mq2=document.getElementById('marquee2Track');if(mq2){mq2.innerHTML+=mq2.innerHTML;}</script>
 </body>
 </html>
