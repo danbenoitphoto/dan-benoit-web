@@ -1,0 +1,110 @@
+/* Dan Benoit Web — ANIMATION PREVIEW layer (reel-style motion).
+   Additive only: every rule supports hooks created by anim.js / site.js.
+   Without JS (or with reduced motion) nothing here hides content. */
+
+/* --- masked line reveals (headings) --- */
+.lm-line{display:block;overflow:hidden;padding-bottom:.12em;margin-bottom:-.12em}
+.lm-inner{display:block;will-change:transform}
+
+/* --- hero hooks (parallax + tilt targets) --- */
+.hero-visual{will-change:transform}
+.hero-visual img{will-change:transform}
+
+/* --- giant outlined word behind the samples section --- */
+#samples{position:relative;overflow:hidden}
+#samples .wrap{position:relative;z-index:1}
+.outline-word{position:absolute;top:2.5rem;left:0;z-index:0;pointer-events:none;user-select:none;
+  font-size:clamp(11rem,27vw,25rem);font-weight:900;line-height:.9;letter-spacing:.01em;white-space:nowrap;
+  color:transparent;-webkit-text-stroke:2px rgba(201,162,75,.15);will-change:transform}
+
+/* --- shelf card tilt (JS-driven; kill the CSS hover-lift so transforms don't fight) --- */
+html.anim .sample{transition:border-color .2s ease,box-shadow .35s ease;will-change:transform}
+html.anim .sample:hover{transform:none;box-shadow:0 26px 52px rgba(0,0,0,.55),0 0 0 1px rgba(201,162,75,.28),0 18px 48px rgba(201,162,75,.12)}
+
+/* --- process assembly line --- */
+.steps{position:relative}
+.process-line{position:absolute;top:43px;left:12.5%;width:75%;height:4px;z-index:2;overflow:visible;pointer-events:none}
+.process-line path{stroke:var(--gold);stroke-width:3;stroke-linecap:round;fill:none;
+  filter:drop-shadow(0 0 6px rgba(232,200,119,.55))}
+.step{position:relative;z-index:1}
+.step .num{position:relative;z-index:3}
+@media(max-width:900px){.process-line{display:none}}
+
+/* --- slice reveal (callout heading) --- */
+.callout{overflow:hidden}
+.slice-wrap{position:relative;display:block}
+.slice-ghost{visibility:hidden}
+.slice-half{position:absolute;inset:0;will-change:transform}
+.slice-top{clip-path:inset(-.15em -.05em 50% -.05em)}
+.slice-bot{clip-path:inset(50% -.05em -.15em -.05em)}
+
+/* --- image curtain/zoom hooks --- */
+.sample img,.ba img.fill,.mock-new .new-hero img{will-change:transform,clip-path}
+
+/* ================================================================
+   V2 INTENSIFICATION — denser, bigger, always-alive motion
+   ================================================================ */
+
+/* --- hero stage: floating chips + breathing glow + float wrappers --- */
+.hero{overflow:hidden}
+.hero>.wrap{position:relative;z-index:1}
+.hero-pulse{position:absolute;inset:0;z-index:0;pointer-events:none;will-change:transform,opacity;
+  background:radial-gradient(880px 500px at 80% 26%,rgba(232,200,119,.17),rgba(232,200,119,0) 62%)}
+.hero-visual{position:relative}
+.hv-float,.hv-tilt{will-change:transform}
+.hero-chip{position:absolute;z-index:3;display:inline-flex;align-items:center;gap:.5em;
+  background:rgba(13,17,28,.8);border:1px solid rgba(232,200,119,.45);color:var(--gold2);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  font-size:.8rem;font-weight:800;letter-spacing:.05em;padding:.5em 1em;border-radius:999px;
+  box-shadow:0 14px 34px rgba(0,0,0,.5);white-space:nowrap;pointer-events:none;will-change:transform}
+.hero-chip::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold2);
+  box-shadow:0 0 10px rgba(232,200,119,.9);flex:none}
+.chip-1{top:5%;left:-12px}
+.chip-2{bottom:17%;right:-10px}
+.chip-3{bottom:-14px;left:9%}
+@media(max-width:640px){
+  .chip-1{left:-2px;top:3%}
+  .chip-2{right:-2px;bottom:10%}
+  .chip-3{display:none}
+  .hero-chip{font-size:.72rem;padding:.42em .85em}
+}
+
+/* --- multi-layer parallax glows (divs injected by anim.js) --- */
+#features,#upgrades,#contact{position:relative;overflow:hidden}
+#features .wrap,#upgrades .wrap,#contact .wrap{position:relative;z-index:1}
+.px-glow{position:absolute;inset:-12% -6%;z-index:0;pointer-events:none;will-change:transform;
+  background:radial-gradient(560px 380px at 18% 30%,rgba(201,162,75,.11),rgba(201,162,75,0) 62%),
+             radial-gradient(640px 420px at 84% 74%,rgba(110,130,255,.07),rgba(110,130,255,0) 60%)}
+
+/* --- second marquee row: counter-scrolling, slower, quieter --- */
+.marquee.mq2{background:transparent;border-top:0;padding:10px 0 12px}
+.mq2-track{animation:scrollXr 46s linear infinite}
+.mq2-track span{font-size:.74rem;letter-spacing:.3em;color:#8f9bb0;font-weight:700}
+.mq2-track b{color:rgba(201,162,75,.75)}
+@keyframes scrollXr{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+
+/* --- button shine sweep (hover) --- */
+.btn{position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;top:-10%;bottom:-10%;left:0;width:45%;pointer-events:none;
+  background:linear-gradient(100deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 100%);
+  transform:translateX(-230%) skewX(-18deg);transition:transform .7s ease}
+.btn:hover::after{transform:translateX(330%) skewX(-18deg)}
+
+/* --- generic card shadow bloom --- */
+.card{transition:transform .2s ease,border-color .2s ease,box-shadow .35s ease}
+.card:hover{box-shadow:0 22px 44px rgba(0,0,0,.48),0 12px 32px rgba(201,162,75,.09)}
+
+/* --- process step dots: pulse ring as the line reaches them --- */
+.step .num.pulse{animation:numPulse .7s ease-out}
+@keyframes numPulse{0%{box-shadow:0 0 0 0 rgba(232,200,119,.55)}100%{box-shadow:0 0 0 18px rgba(232,200,119,0)}}
+
+/* --- scroll-velocity skew lives on <main> (JS-driven) --- */
+html.anim main{will-change:transform}
+
+@media (prefers-reduced-motion: reduce){
+  .lm-inner,.slice-half,.hero-visual img,.outline-word,.hv-float,.hv-tilt,.hero-chip,.px-glow{will-change:auto}
+  .mq2-track{animation:none}
+  .btn::after{display:none}
+  .step .num.pulse{animation:none}
+  html.anim main{will-change:auto}
+}
