@@ -2,14 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://web.danbenoit.com/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/"/>
   </url>
   <url>
     <loc>https://web.danbenoit.com/fr/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://web.danbenoit.com/web-design-embrun/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/web-design-embrun/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/conception-site-web-embrun/"/>
+  </url>
+  <url>
+    <loc>https://web.danbenoit.com/fr/conception-site-web-embrun/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/web-design-embrun/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/conception-site-web-embrun/"/>
+  </url>
+  <url>
+    <loc>https://web.danbenoit.com/bilingual-websites/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/bilingual-websites/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/sites-web-bilingues/"/>
+  </url>
+  <url>
+    <loc>https://web.danbenoit.com/fr/sites-web-bilingues/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/bilingual-websites/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/sites-web-bilingues/"/>
+  </url>
+  <url>
+    <loc>https://web.danbenoit.com/web-design-russell/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/web-design-russell/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/conception-site-web-russell/"/>
+  </url>
+  <url>
+    <loc>https://web.danbenoit.com/fr/conception-site-web-russell/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/web-design-russell/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/conception-site-web-russell/"/>
   </url>
 </urlset>
