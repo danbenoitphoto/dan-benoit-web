@@ -48,4 +48,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/web-design-russell/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/conception-site-web-russell/"/>
   </url>
+  <url>
+    <loc>https://web.danbenoit.com/clients/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/clients/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/clients/"/>
+  </url>
+  <url>
+    <loc>https://web.danbenoit.com/fr/clients/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/clients/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/clients/"/>
+  </url>
 </urlset>
