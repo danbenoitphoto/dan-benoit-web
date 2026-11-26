@@ -32,7 +32,18 @@ section.navy{background:linear-gradient(160deg,#0a0f1e,#0d1526 60%,#0a0f1e)}
 .main-nav a:hover{color:var(--gold2)}
 .main-nav .lang-link{border:1px solid var(--line);border-radius:999px;padding:.14em .7em}
 .header-call{background:var(--gold-grad);color:#191204!important;border-radius:999px;padding:.42em 1.05em;font-weight:800}
-@media(max-width:900px){.main-nav a:not(.lang-link):not(.header-call){display:none}}
+/* mobile menu (same pattern as Dan Benoit Photo): hamburger opens the section menu */
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;font-size:20px;line-height:1;cursor:pointer;color:#e9ebef}
+html{scroll-padding-top:84px}
+@media(max-width:900px){
+ .menu-btn{display:block}
+ .site-header .wrap{flex-wrap:wrap}
+ .main-nav{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;padding-top:10px}
+ .site-header.open .main-nav{display:flex}
+ .main-nav a{display:block;padding:12px 6px;border-top:1px solid var(--line);font-size:16px}
+ .main-nav .lang-link{border:none;border-top:1px solid var(--line);border-radius:0;padding:12px 6px}
+ .main-nav .header-call{text-align:center;margin-top:10px;border-top:none}
+}
 
 /* buttons */
 .btn{display:inline-block;background:var(--gold-grad);color:#191204;text-decoration:none;font-weight:800;border-radius:999px;padding:.78em 1.6em;border:0;cursor:pointer;font-size:1rem;box-shadow:0 8px 24px rgba(201,162,75,.25);transition:transform .18s ease,box-shadow .18s ease}
