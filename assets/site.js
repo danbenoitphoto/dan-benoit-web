@@ -112,3 +112,25 @@
     });
   }
 })();
+
+/* Mobile menu: hamburger toggles the section nav (same pattern as Dan Benoit Photo) */
+(function () {
+  var btn = document.querySelector(".menu-btn"), hdr = document.querySelector(".site-header");
+  if (!btn || !hdr) return;
+  btn.addEventListener("click", function () {
+    var open = hdr.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  hdr.querySelectorAll(".main-nav a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      hdr.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    });
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      hdr.classList.remove("open");
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+})();
