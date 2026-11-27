@@ -93,7 +93,7 @@
   }
 
   /* ---------- Contact form ---------- */
-  var FORM_ENDPOINT = "https://api.web3forms.com/submit";
+  var FORM_ENDPOINT = "https://formsubmit.co/ajax/dan@danbenoit.com";
   var f = document.querySelector(".studio-form");
   if (f) {
     var s = f.querySelector(".form-status");
