@@ -60,4 +60,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/clients/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/clients/"/>
   </url>
+  <url>
+    <loc>https://web.danbenoit.com/terms/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/terms/"/>
+  </url>
+  <url>
+    <loc>https://web.danbenoit.com/fr/terms/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://web.danbenoit.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://web.danbenoit.com/fr/terms/"/>
+  </url>
 </urlset>
