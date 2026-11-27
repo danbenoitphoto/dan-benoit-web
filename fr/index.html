@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; media-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com; connect-src 'self' https://formsubmit.co https://www.google-analytics.com https://www.googletagmanager.com; form-action 'self' https://formsubmit.co; base-uri 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sites web bilingues à Embrun et Ottawa — Dan Benoit Web</title>
 <meta name="description" content="Sites web bilingues sur mesure — photographie professionnelle, vidéo par drone et entretien inclus. Embrun, Prescott-Russell et l'est d'Ottawa.">
@@ -461,8 +462,7 @@
         <p>Dan Benoit · Embrun, Ontario<br>Au service de Prescott-Russell et de l'est d'Ottawa<br>Français et anglais</p>
         <p>Vous préférez écrire? Utilisez le formulaire — il arrive directement chez moi, pas dans un centre d'appels.</p>
       </div>
-      <form class="studio-form rv" name="dan-benoit-web-contact-fr" method="POST" action="https://api.web3forms.com/submit">
-        <input type="hidden" name="access_key" value="362f0f0b-8864-4120-a51b-d3f41cc4db1e">
+      <form class="studio-form rv" name="dan-benoit-web-contact-fr" method="POST" action="https://formsubmit.co/dan@danbenoit.com">
         <input type="hidden" name="subject" value="Demande de site web - Dan Benoit Web">
         <label for="f-name">Votre nom</label>
         <input id="f-name" name="name" type="text" autocomplete="name" required>
@@ -476,6 +476,7 @@
         <textarea id="f-message" name="message" rows="5" required></textarea>
         <button class="btn" type="submit">Envoyer mon message</button>
         <p class="form-status" role="status" hidden></p>
+        <p class="fine">Confidentialité : vos coordonnées vont seulement à Dan Benoit Web pour répondre à votre demande. Jamais vendues, jamais partagées.</p>
       </form>
     </div>
   </div>
